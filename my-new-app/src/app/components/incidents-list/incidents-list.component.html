@@ -37,7 +37,7 @@
     </thead>
 
     <tbody>
-      <tr class="clickable-row" *ngFor="let incident of Incidents; let i = index" routerLink="/log-incident/{{ incident.incidentId }}">
+      <tr class="clickable-row" [ngStyle]="{ 'background-color':  incident.status === 'New' ? 'red' : (incident.status === 'In Progress' ? 'green' : 'Yellow') }" *ngFor="let incident of Incidents; let i = index" routerLink="/log-incident/{{ incident.incidentId }}">
         <td>{{ incident.incidentId }}</td>
         <td>{{ incident.name }}</td>
         <td>{{ incident.date }}</td>
