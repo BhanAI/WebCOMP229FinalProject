@@ -22,3 +22,9 @@ font-size: 30px;
     margin-bottom: 40px;
     background-color:   #0f2035;
 }
+
+.logInLink{
+    font-size: 20px;
+    margin-left: 400px;
+    font-weight: bold;
+}

@@ -2,6 +2,8 @@
 <div class="team_container"><br><br>
   <h1 class="h1">Incidents List</h1>
 </div>
+<br><br>
+  <p *ngIf="!isLoggedIn()" class="logInLink">To Add or Manage Incidents, please <a href="/log-in" style="font-weight:bold; font-size:larger;"> Log In</a></p>
 <div class="container">
   <a class="btn btn-primary" *ngIf="isLoggedIn()" role="button" routerLink="/add-incident">
     <i class="fas fa-plus-circle"></i>Add An Incident
