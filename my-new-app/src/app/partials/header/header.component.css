@@ -1,2 +1,8 @@
-.nav-item{font-size: 20px; font-weight:bold;}
-.navbar{color:aquamarine}
+.nav-item{
+    font-size: 22px; 
+    font-weight:bold;
+}
+
+.nav-link{
+    color: rgb(33, 56, 88) !important;
+}
