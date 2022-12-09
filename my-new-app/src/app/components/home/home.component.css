@@ -1,35 +1,73 @@
-
+/* 
 .logo_container {
     text-align: center;
     background-color: #3e535a;
     width: 100%;
     height: auto;
-}
-
+} */
 
 .team_container {
     float: left;
     width: 100%;
+    height: 120px;
     text-align: center;
-    margin-bottom: 40px;
-    
-    
+    margin-bottom: 5px;
+    background-color:   #0f2035;
 }
 
 .team_title {
     font-size: 30px;
-    color: #131313;
-    margin-top: 15px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 45px;
 }
 .team_mem{
+    margin-left: 5%;
     color:#070707;
     font-weight: bold;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-.center_content {
-    margin: 20px 80px 80px 80px;
-    text-align: center;
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3em;
+    justify-items: center;
+    padding: 1em 1em 1em 4em;
+    display: flex;
 }
+.service{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:  20px;
+border: solid 1px rgb(86, 101, 108);
+padding: 2em 2em 2em 2em;
+background-color: #b3ccd4;
+border-radius: 20px;
+}
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3em;
+    justify-items: center;
+    padding: 1em 2em 3em 4em;
+    display: flex;
+}
+.member{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:  20px;
+border: solid 1px rgb(86, 101, 108);
+padding: 2em 2em 2em 2em;
+background-color: #f2e9e8;
+border-radius: 15px;
+}
+h1{
+    font-weight: bolder;
+}
+.imgCotainer{
+    width: 94%;
+    margin-left: 5%;
+    padding: 0em 1em 0em 0em;
+}
+
 

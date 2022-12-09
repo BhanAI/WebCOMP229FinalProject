@@ -1,16 +1,15 @@
 <!-- Bootstrap CSS -->
-
+<div class="team_container"><br><br>
+  <h1 class="h1">Incidents List</h1>
+</div>
 <div class="container">
-  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h1">Incidents List</h1>
-  </div>
   <a class="btn btn-primary" *ngIf="isLoggedIn()" role="button" routerLink="/add-incident">
     <i class="fas fa-plus-circle"></i>Add An Incident
   </a>
   <a>
     <input type="checkbox" *ngIf="isLoggedIn()" (change)="checkValue($event)" id="ckbShowIncidents">
-    <label *ngIf="isLoggedIn()" for="ckbShowIncidents">
-      <b>Show All Incidents</b>
+    <label  *ngIf="isLoggedIn()" for="ckbShowIncidents">
+      <b class="showAllIncidents"> Show All Incidents</b>
     </label>
   </a>
   <br> <br> <br>
@@ -33,7 +32,7 @@
     </thead>
 
     <tbody>
-      <tr class="clickable-row" [ngStyle]="{ 'background-color':  incident.status === 'New' ? 'red' : (incident.status === 'In Progress' ? 'green' : 'Yellow') }" *ngFor="let incident of Incidents; let i = index" routerLink="/log-incident/{{ incident.incidentId }}">
+      <tr class="clickable-row" [ngStyle]="{ 'background-color':  incident.status === 'New' ? '#fef9dd' : (incident.status === 'In Progress' ? '#e2f5d5' : 'rgb(230, 230, 230)') }" *ngFor="let incident of Incidents; let i = index" routerLink="/log-incident/{{ incident.incidentId }}">
         <td>{{ incident.incidentId }}</td>
         <td>{{ incident.name }}</td>
         <td>{{ incident.date }}</td>

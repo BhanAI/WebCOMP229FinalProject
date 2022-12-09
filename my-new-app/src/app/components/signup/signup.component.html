@@ -1,10 +1,9 @@
 <div class="auth-wrapper">
+  <h1 class="signUp">Sign Up</h1>
     <form
       class="form-signin"
       [formGroup]="signupForm"
-      (ngSubmit)="registerUser()"
-    >
-      <h1 class="h3 mb-3 font-weight-normal text-center" style="font-weight:bold ; font-size:30px; padding-top: 10px;">Sign Up</h1>
+      (ngSubmit)="registerUser()">
       <div class="form-group">
         <label>Name</label> 
         <input
