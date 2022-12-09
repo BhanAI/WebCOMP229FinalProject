@@ -15,7 +15,8 @@ import { Router } from '@angular/router'
 
 export class AuthService {
 
-  endpoint: string = 'http://localhost:8000/api';
+  // endpoint: string = 'http://localhost:8000/api';
+  endpoint: string = 'https://bmw-z4.azurewebsites.net/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   // currentUser: User = new User();
 

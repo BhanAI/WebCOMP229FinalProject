@@ -13,7 +13,8 @@ import {
 })
 export class CrudService {
   // Node/Express API
-  REST_API: string = 'http://localhost:8000/api';
+  // REST_API: string = 'http://localhost:8000/api';
+  REST_API: string = 'https://bmw-z4.azurewebsites.net/api';
 
   // Http Header
   httpHeaders = new HttpHeaders().set('Content-Type', 'application/json');
